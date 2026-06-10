@@ -1,139 +1,316 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="tr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Balvita</title>
-  <style>
-    :root {
-      --gruen: #4a7c59;
-      --hell: #f4f1ea;
-      --dunkel: #2b2b2b;
-    }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
-      color: var(--dunkel);
-      line-height: 1.6;
-      background: var(--hell);
-    }
+  <title>BALVİTA Propolis | Buzağı, Kuzu ve Oğlaklar İçin Doğal Destek Ürünü</title>
+  <meta name="description" content="BALVİTA Propolis; buzağı, kuzu, oğlak ve diğer çiftlik hayvanları için aminoasit ve vitamin destekli %100 doğal sıvı yem destek ürünü. Bağışıklığı güçlendirir, sağlıklı gelişimi destekler. Bilgi için WhatsApp hattımız." />
+  <meta name="keywords" content="propolis, buzağı, kuzu, oğlak, hayvan vitamini, yem katkı, doğal destek, BALVİTA, aminoasit" />
+  <link rel="canonical" href="https://balvita.com.tr/" />
+  <meta name="theme-color" content="#2f5d3f" />
 
-    /* Navigation */
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1.2rem 2rem;
-      background: #fff;
-      position: sticky;
-      top: 0;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
-    .logo { font-size: 1.5rem; font-weight: 700; color: var(--gruen); }
-    nav a {
-      margin-left: 1.5rem;
-      text-decoration: none;
-      color: var(--dunkel);
-      font-weight: 500;
-    }
-    nav a:hover { color: var(--gruen); }
+  <!-- Sosyal medya paylaşımı -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta property="og:title" content="BALVİTA Propolis | Yavrularınızın Güçlü Başlangıcı" />
+  <meta property="og:description" content="Aminoasit ve vitamin destekli %100 doğal sıvı propolis. Buzağı, kuzu ve oğlaklar için doğal destek." />
+  <meta property="og:url" content="https://balvita.com.tr/" />
+  <meta property="og:image" content="https://balvita.com.tr/assets/logo.svg" />
 
-    /* Hero */
-    .hero {
-      text-align: center;
-      padding: 6rem 2rem;
-      background: linear-gradient(135deg, #e8f0e8, #f4f1ea);
-    }
-    .hero h1 { font-size: 2.8rem; margin-bottom: 1rem; }
-    .hero p { font-size: 1.2rem; max-width: 600px; margin: 0 auto 2rem; }
-    .btn {
-      display: inline-block;
-      background: var(--gruen);
-      color: #fff;
-      padding: 0.9rem 2rem;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: transform 0.15s;
-    }
-    .btn:hover { transform: translateY(-2px); }
-
-    /* Sektionen */
-    section { padding: 4rem 2rem; max-width: 1000px; margin: 0 auto; }
-    section h2 { font-size: 2rem; margin-bottom: 1.5rem; text-align: center; }
-    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; }
-    .card {
-      background: #fff;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-    }
-    .card h3 { color: var(--gruen); margin-bottom: 0.5rem; }
-
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: var(--dunkel);
-      color: #ccc;
-      font-size: 0.9rem;
-    }
-  </style>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script>document.documentElement.className='js';</script>
 </head>
 <body>
 
-  <header>
-    <div class="logo">Balvita</div>
-    <nav>
-      <a href="#leistungen">Leistungen</a>
-      <a href="#ueber">Über uns</a>
-      <a href="#kontakt">Kontakt</a>
-    </nav>
+  <!-- ======================= HEADER ======================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="BALVİTA ana sayfa">
+        <img class="logo" src="assets/logo.svg" alt="BALVİTA logo" />
+        <span class="brand-text">
+          <span class="brand-name">BALVİTA</span>
+          <span class="brand-tag">Yerli ve Doğal Güç</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Menüyü aç/kapat" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <a class="navlink" href="#urun">Ürün</a>
+        <a class="navlink" href="#faydalar">Faydaları</a>
+        <a class="navlink" href="#kullanim">Kullanım</a>
+        <a class="navlink" href="#kimler">Kimler İçin?</a>
+        <a class="btn btn-wa" href="https://wa.me/905431059576?text=Merhaba%2C%20BALV%C4%B0TA%20Propolis%20%C3%BCr%C3%BCn%C3%BC%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.039z"/></svg>
+          Bilgi Al
+        </a>
+      </nav>
+    </div>
   </header>
 
-  <div class="hero">
-    <h1>Willkommen bei Balvita</h1>
-    <p>Hier steht dein einprägsamer Satz, der erklärt, was du anbietest und warum es Menschen weiterhilft.</p>
-    <a href="#kontakt" class="btn">Jetzt Kontakt aufnehmen</a>
-  </div>
+  <!-- ======================= HERO ======================= -->
+  <section class="hero" id="urun">
+    <div class="container hero-grid">
+      <div class="hero-text" data-reveal>
+        <div class="hero-badges">
+          <span class="pill pill-gold">Yeni Ürün</span>
+          <span class="pill pill-green">%100 Doğal</span>
+        </div>
+        <h1>BALVİTA Propolis
+          <span class="accent">Aminoasit &amp; Vitamin Destekli</span>
+        </h1>
+        <p class="lead">Yavrularınızın Güçlü Başlangıcı</p>
+        <p class="sub">Doğanın gücünü bilimle birleştiren sıvı destek ürünü. Buzağı, kuzu ve oğlakların yenidoğan döneminde bağışıklığını ve sağlıklı gelişimini doğal yoldan destekler.</p>
+        <div class="hero-cta">
+          <a class="btn btn-wa" href="https://wa.me/905431059576?text=Merhaba%2C%20BALV%C4%B0TA%20Propolis%20%C3%BCr%C3%BCn%C3%BC%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.039z"/></svg>
+            WhatsApp'tan Bilgi Al
+          </a>
+          <a class="btn btn-outline" href="#faydalar">Ürünü İncele</a>
+        </div>
+      </div>
 
-  <section id="leistungen">
-    <h2>Unsere Leistungen</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Leistung 1</h3>
-        <p>Kurze Beschreibung deines ersten Angebots.</p>
-      </div>
-      <div class="card">
-        <h3>Leistung 2</h3>
-        <p>Kurze Beschreibung deines zweiten Angebots.</p>
-      </div>
-      <div class="card">
-        <h3>Leistung 3</h3>
-        <p>Kurze Beschreibung deines dritten Angebots.</p>
+      <div class="hero-visual" data-reveal>
+        <span class="float-badge tl"><span class="big">YENİ</span>ÜRÜN!</span>
+        <span class="float-badge br"><span class="big">%100</span>DOĞAL</span>
+        <img class="logo-big" src="assets/logo.svg" alt="BALVİTA Propolis" />
+        <h3>PROPOLİS</h3>
+        <span class="vsub">Sıvı Destek Ürünü</span>
+        <p class="vdesc">20 ml &amp; 1 L şişe seçenekleri</p>
       </div>
     </div>
   </section>
 
-  <section id="ueber">
-    <h2>Über uns</h2>
-    <p style="text-align:center; max-width:700px; margin:0 auto;">
-      Erzähl hier deine Geschichte: Wer steckt hinter Balvita, was ist eure Mission
-      und warum sollten Kund:innen euch vertrauen?
-    </p>
+  <!-- ======================= YASAL UYARI ======================= -->
+  <div class="disclaimer">
+    <div class="container">
+      <strong>Bilgilendirme:</strong> Yem katkı / destek ürünüdür. Hastalık teşhis, tedavi veya önleme amacı taşımaz. Veteriner hekiminize danışınız.
+    </div>
+  </div>
+
+  <!-- ======================= NEDEN BALVİTA ======================= -->
+  <section class="section-alt">
+    <div class="container">
+      <div class="grid grid-2" style="align-items:center;gap:3rem">
+        <div data-reveal>
+          <span class="eyebrow">Neden BALVİTA?</span>
+          <h2 style="font-size:clamp(1.6rem,3.2vw,2.3rem);text-align:left">Doğanın gücü, bilimle buluştu</h2>
+          <p style="color:var(--muted);margin-top:1rem">BALVİTA, doğanın gücünü bilimle birleştirerek hayvanlarınızın sağlığını ve performansını destekler. Propolis, aminoasit ve vitaminlerle zenginleştirilmiş formülümüz, bağışıklık sistemini güçlendirir ve sağlıklı gelişimi destekler.</p>
+        </div>
+        <div class="card" data-reveal style="background:var(--green-soft);border:0">
+          <span class="eyebrow">Propolis Nedir?</span>
+          <p style="color:#3f3f39;font-size:1.05rem">Arıların doğal olarak ürettiği; güçlü antioksidan ve doğal koruyucu özellikleriyle bilinen değerli bir maddedir.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="kontakt">
-    <h2>Kontakt</h2>
-    <p style="text-align:center;">
-      E-Mail: <a href="mailto:hallo@balvita.de" style="color:var(--gruen)">hallo@balvita.de</a><br />
-      Telefon: 0123 / 456789
-    </p>
+  <!-- ======================= FAYDALAR ======================= -->
+  <section id="faydalar">
+    <div class="container">
+      <span class="eyebrow" style="display:block;text-align:center">Faydaları</span>
+      <h2 class="section-title">Yavrularınız İçin Doğal Destek</h2>
+      <p class="section-intro">BALVİTA Propolis, yenidoğan döneminden itibaren hayvanlarınızın sağlıklı gelişimine çok yönlü katkı sağlar.</p>
+
+      <div class="grid grid-3">
+        <div class="card" data-reveal>
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5l8-3z"/></svg></div>
+          <h3>Bağışıklığı Güçlendirir</h3>
+          <p>Bağışıklık sistemini destekleyerek hayvanların dış etkenlere karşı direncine katkı sağlar.</p>
+        </div>
+        <div class="card" data-reveal>
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M7 4h7a4 4 0 014 4c0 6-4 8-4 12a3 3 0 01-6 0c0-2 1-3 1-5a3 3 0 00-3-3 3 3 0 010-6z"/></svg></div>
+          <h3>Sindirim Sistemini Destekler</h3>
+          <p>Sağlıklı bir sindirim için doğal destek sunarak besin değerlendirmesine katkıda bulunur.</p>
+        </div>
+        <div class="card" data-reveal>
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 4v6m0 0c0 4-2 4-5 4-2 0-3-2-3-5 0-1 .5-2 1.5-2S8 8 8 10m4 0c0 4 2 4 5 4 2 0 3-2 3-5 0-1-.5-2-1.5-2S16 8 16 10"/></svg></div>
+          <h3>Solunum Yoluna Destek</h3>
+          <p>Solunum yollarının sağlıklı çalışmasına doğal içeriğiyle destek olur.</p>
+        </div>
+        <div class="card" data-reveal>
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 17l5-5 4 4 8-8m0 0h-5m5 0v5"/></svg></div>
+          <h3>Gelişim ve Performansı Artırır</h3>
+          <p>Aminoasit ve vitamin desteğiyle sağlıklı gelişimi ve günlük performansı destekler.</p>
+        </div>
+        <div class="card" data-reveal>
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M4 10c0-3 2-5 5-5 1.5 0 2.5.5 3 1.5C12.5 5.5 13.5 5 15 5c3 0 5 2 5 5 0 4-4 7-8 9-4-2-8-5-8-9z"/></svg></div>
+          <h3>Yenidoğan Döneminde Destek</h3>
+          <p>Hayatın ilk günlerinde güçlü bir başlangıç için yenidoğan döneminde destek sağlar.</p>
+        </div>
+        <div class="card" data-reveal>
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M6 3v5a4 4 0 004 4 4 4 0 014 4v5M18 3v5a4 4 0 01-4 4"/></svg></div>
+          <h3>Bağırsak Sağlığını Destekler</h3>
+          <p>Bağırsak florasının dengesine ve sağlıklı çalışmasına doğal katkı sunar.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    © 2026 Balvita. Alle Rechte vorbehalten.
+  <!-- ======================= KULLANIM & İÇERİK ======================= -->
+  <section id="kullanim" class="section-alt">
+    <div class="container">
+      <h2 class="section-title">Kullanım Şekli &amp; İçerik</h2>
+      <p class="section-intro">Pratik kullanım, doğal içerik. İçme suyuna karıştırarak kolayca uygulayın.</p>
+
+      <div class="usage-grid">
+        <div class="usage-box" data-reveal>
+          <div class="dose"><small>Hayvan kg başına</small>0.2 damla</div>
+          <div class="how">İçme suyuna karıştırılır</div>
+          <div class="meta">Şişe boyutları: 20 ml ve 1 L · Günlük kullanım önerilir</div>
+        </div>
+
+        <div data-reveal>
+          <h3 style="margin-bottom:1.2rem;font-size:1.4rem">İçeriğindekiler</h3>
+          <div class="ingredients">
+            <div class="ingredient">
+              <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l7 4v6l-7 4-7-4V7z"/><path d="M12 3v8m0 0l7-4m-7 4l-7-4"/></svg></div>
+              <strong>Propolis</strong><span>Doğal arı ürünü</span>
+            </div>
+            <div class="ingredient">
+              <div class="ic"><svg viewBox="0 0 24 24"><circle cx="7" cy="8" r="2.2"/><circle cx="17" cy="8" r="2.2"/><circle cx="12" cy="16" r="2.2"/><path d="M9 8.6l6 0M8 10l3 4m5-4l-3 4"/></svg></div>
+              <strong>Aminoasitler</strong><span>Yapı taşları</span>
+            </div>
+            <div class="ingredient">
+              <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 100 18 9 9 0 000-18z"/><path d="M8 12l3 3 5-6"/></svg></div>
+              <strong>Vitaminler</strong><span>A · D3 · B12</span>
+            </div>
+            <div class="ingredient">
+              <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3s6 7 6 11a6 6 0 01-12 0c0-4 6-11 6-11z"/></svg></div>
+              <strong>Sıvı Form</strong><span>Kolay uygulama</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Avantajlar -->
+      <h3 style="text-align:center;margin:3.2rem 0 1.6rem;font-size:1.4rem">Avantajları</h3>
+      <div class="adv-row">
+        <div class="adv" data-reveal><span class="check"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>Doğal İçerik</div>
+        <div class="adv" data-reveal><span class="check"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>Süte ve Ete Geçmez</div>
+        <div class="adv" data-reveal><span class="check"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>Kolay Kullanım</div>
+        <div class="adv" data-reveal><span class="check"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>Ekonomik Çözüm</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= KİMLER İÇİN ======================= -->
+  <section id="kimler">
+    <div class="container">
+      <h2 class="section-title">Kimler İçin Uygun?</h2>
+      <p class="section-intro">Özellikle yenidoğan ve genç hayvanlar başta olmak üzere geniş bir kullanım alanına sahiptir.</p>
+      <div class="tags">
+        <span class="tag" data-reveal><svg viewBox="0 0 24 24"><path d="M4 9c0-2 2-4 5-4s5 2 5 4M14 9h3a3 3 0 013 3c0 3-3 5-6 5H9c-3 0-5-2-5-5s2-4 5-4"/></svg>Buzağılar</span>
+        <span class="tag" data-reveal><svg viewBox="0 0 24 24"><path d="M4 9c0-2 2-4 5-4s5 2 5 4M14 9h3a3 3 0 013 3c0 3-3 5-6 5H9c-3 0-5-2-5-5s2-4 5-4"/></svg>Kuzular</span>
+        <span class="tag" data-reveal><svg viewBox="0 0 24 24"><path d="M4 9c0-2 2-4 5-4s5 2 5 4M14 9h3a3 3 0 013 3c0 3-3 5-6 5H9c-3 0-5-2-5-5s2-4 5-4"/></svg>Oğlaklar</span>
+        <span class="tag" data-reveal><svg viewBox="0 0 24 24"><path d="M4 9c0-2 2-4 5-4s5 2 5 4M14 9h3a3 3 0 013 3c0 3-3 5-6 5H9c-3 0-5-2-5-5s2-4 5-4"/></svg>Sığırlar</span>
+        <span class="tag" data-reveal><svg viewBox="0 0 24 24"><path d="M4 9c0-2 2-4 5-4s5 2 5 4M14 9h3a3 3 0 013 3c0 3-3 5-6 5H9c-3 0-5-2-5-5s2-4 5-4"/></svg>Koyunlar</span>
+        <span class="tag" data-reveal><svg viewBox="0 0 24 24"><path d="M4 9c0-2 2-4 5-4s5 2 5 4M14 9h3a3 3 0 013 3c0 3-3 5-6 5H9c-3 0-5-2-5-5s2-4 5-4"/></svg>Keçiler</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= CTA ======================= -->
+  <section class="cta-band" id="iletisim">
+    <div class="container">
+      <h2>İlgileniyor musunuz?</h2>
+      <p>Deneme ürününüzden yararlanmak ve sipariş bilgisi almak için hemen WhatsApp üzerinden bizimle iletişime geçin. Sorularınızı memnuniyetle yanıtlayalım.</p>
+      <a class="btn btn-wa" href="https://wa.me/905431059576?text=Merhaba%2C%20BALV%C4%B0TA%20Propolis%20%C3%BCr%C3%BCn%C3%BC%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.039z"/></svg>
+        WhatsApp ile İletişime Geç
+      </a>
+      <p class="phone">📞 <a href="https://wa.me/905431059576" target="_blank" rel="noopener">+90 (543) 105 95 76</a></p>
+    </div>
+  </section>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand-name" style="font-family:var(--serif);font-size:1.5rem">BALVİTA</span>
+          <p>Yerli ve Doğal Güç. Buzağı, kuzu ve oğlaklarınızın sağlıklı ve güçlü bir başlangıç yapması için doğal sıvı destek ürünü.</p>
+          <div class="made-badges">
+            <span>YERLİ ÜRETİM</span>
+            <span>TÜRK MALI</span>
+          </div>
+        </div>
+
+        <div>
+          <h4>Menü</h4>
+          <div class="footer-links">
+            <a href="#urun">Ürün</a>
+            <a href="#faydalar">Faydaları</a>
+            <a href="#kullanim">Kullanım Şekli</a>
+            <a href="#kimler">Kimler İçin Uygun?</a>
+            <a href="#iletisim">İletişim</a>
+            <a href="gizlilik-politikasi.html">Gizlilik &amp; KVKK</a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Üretici Firma</h4>
+          <p class="maker">
+            <strong>Apipark Arıcılık Üretim Danış. Eğ. Islah ve İhr. ve İth. San. Tic. A.Ş.</strong><br />
+            Muratlı Cd. İstiklal Mh. Sandal Sk. No:6<br />
+            Süleymanpaşa / TEKİRDAĞ<br />
+            Tel: +90 282 80 65 · Gsm: +90 541 518 67 16<br />
+            E-posta: <a href="mailto:info@api10.com.tr">info@api10.com.tr</a><br />
+            Web: <a href="https://www.apipark.com.tr" target="_blank" rel="noopener">www.apipark.com.tr</a><br />
+            İşletme Kayıt No: YK-TR5900465
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="yil">2026</span> BALVİTA · Tüm hakları saklıdır.</span>
+        <span class="legal-links">
+          <a href="gizlilik-politikasi.html">Gizlilik Politikası</a>
+          <a href="gizlilik-politikasi.html#cerez">Çerez Politikası</a>
+          <a href="gizlilik-politikasi.html#kvkk">KVKK Aydınlatma Metni</a>
+        </span>
+      </div>
+      <p style="font-size:.8rem;color:#7e8e7e;margin-top:1rem;text-align:center">
+        Yem katkı / destek ürünüdür. Hastalık teşhis, tedavi veya önleme amacı taşımaz. Üretim Tarihi (ÜT) ve Parti No. (PN) ambalaj üzerindedir. Veteriner hekiminize danışınız.
+      </p>
+    </div>
   </footer>
 
+  <!-- Yüzen WhatsApp butonu -->
+  <a class="wa-float" href="https://wa.me/905431059576?text=Merhaba%2C%20BALV%C4%B0TA%20Propolis%20%C3%BCr%C3%BCn%C3%BC%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" aria-label="WhatsApp ile iletişime geç">
+    <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.039zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.71.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
+  <script>
+    // Yıl
+    document.getElementById('yil').textContent = new Date().getFullYear();
+
+    // Mobil menü
+    var toggle = document.querySelector('.nav-toggle');
+    var nav = document.getElementById('nav');
+    toggle.addEventListener('click', function(){
+      var open = nav.classList.toggle('open');
+      toggle.classList.toggle('active', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+    nav.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){
+        nav.classList.remove('open');
+        toggle.classList.remove('active');
+      });
+    });
+
+    // Scroll reveal
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+    }, {threshold:.12});
+    document.querySelectorAll('[data-reveal]').forEach(function(el){ io.observe(el); });
+  </script>
 </body>
 </html>
