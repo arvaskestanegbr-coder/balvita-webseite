@@ -110,6 +110,8 @@ section{padding:4.6rem 0}
 .benefit .circle svg{width:34px;height:34px;stroke:#fff;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
 .benefit h3{font-size:1.12rem;color:var(--green-deep);margin-bottom:.25rem;line-height:1.2}
 .benefit p{color:var(--muted);font-size:.94rem}
+.benefit .b-ic{width:66px;height:66px;flex:0 0 auto;display:block}
+.ingredient .i-ic{width:84px;height:84px;margin:0 auto .55rem;display:block}
 
 /* ---------- Kullanım & İçerik ---------- */
 .usage-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:stretch}
@@ -145,7 +147,8 @@ section{padding:4.6rem 0}
 .cta-box p{color:var(--muted);max-width:520px;margin:.8rem auto 1.6rem}
 .cta-box .phone{font-size:1.3rem;font-weight:800;margin-top:1.1rem;color:var(--green-deep)}
 .cta-box .phone a{color:var(--green)}
-.made-badges{display:flex;gap:1rem;justify-content:center;margin-top:1.8rem;flex-wrap:wrap}
+.made-badges{display:flex;gap:1.6rem;justify-content:center;align-items:center;margin-top:1.8rem;flex-wrap:wrap}
+.made-badges .seal{height:56px;width:auto}
 .stamp{display:inline-flex;align-items:center;gap:.5rem;border:2px solid var(--bronze);color:var(--bronze);border-radius:10px;padding:.5rem .9rem;font-size:.74rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;line-height:1.05;text-align:left}
 .stamp svg{width:22px;height:22px;stroke:var(--bronze);fill:none;stroke-width:1.7}
 
