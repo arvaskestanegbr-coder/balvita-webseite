@@ -98,14 +98,14 @@ section{padding:4.6rem 0}
 
 /* ---------- Neden / Propolis nedir ---------- */
 .two-col{display:grid;grid-template-columns:1fr 1fr;gap:2.4rem;align-items:stretch}
-.info-block{background:var(--white);border:1px solid var(--cream-2);border-radius:var(--radius);padding:2.2rem;box-shadow:var(--shadow-sm)}
+.info-block{background:var(--green-soft);border:1px solid #dde7dc;border-radius:var(--radius);padding:2.2rem;box-shadow:var(--shadow-sm)}
 .info-block h2{font-size:clamp(1.5rem,3vw,2rem);text-align:left;text-transform:uppercase}
 .info-block h2::after{content:"";display:block;width:54px;height:4px;background:var(--gold);border-radius:3px;margin-top:.7rem}
 .info-block p{color:#444;margin-top:1rem;font-size:1.04rem}
 
 /* ---------- Faydalar (yeşil daire ikonlar) ---------- */
 .benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:1.8rem 2rem}
-.benefit{display:flex;gap:1.1rem;align-items:flex-start}
+.benefit{display:flex;gap:1.1rem;align-items:center}
 .benefit .circle{flex:0 0 auto;width:64px;height:64px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-sm)}
 .benefit .circle svg{width:34px;height:34px;stroke:#fff;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
 .benefit h3{font-size:1.12rem;color:var(--green-deep);margin-bottom:.25rem;line-height:1.2}
